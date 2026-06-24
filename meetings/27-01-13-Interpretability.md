@@ -24,8 +24,9 @@ organisers: Davide Moltisanti (University of Bath), Michael Wray (University of 
 
 ## Invited Speakers
 
-Coming Soon
-* 
+- [Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) - The University of Edinburgh
+- [Elisa Ricci](https://eliricci.eu/) - University of Trento and Bruno Kessler Foundation
+- [Stephan Alaniz](https://www.eml-munich.de/people/stephan-alaniz) - Telecom Paris (Paris Polytechnic Institute)
 
 
 ## Call for Presentations
