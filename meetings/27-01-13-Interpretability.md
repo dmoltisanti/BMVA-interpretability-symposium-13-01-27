@@ -6,7 +6,7 @@ index: 1
 date: 2027-01-13
 meeting-title: "BMVA Symposium on Interpretability"
 image: BMVAMeetingPlaceholderImg.png
-organisers: Davide Moltisanti (University of Bath), Michael Wray (University of Bath)
+organisers: Davide Moltisanti (University of Bath), Michael Wray (University of Bristol)
 ---
 
 <div class="alert mt-3 alert-info" style="text-align:center;">
