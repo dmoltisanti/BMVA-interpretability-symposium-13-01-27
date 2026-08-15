@@ -15,7 +15,7 @@ organisers: Silpa Vadakkeeveetil Sreelatha (University of Surrey), Adarsh Kappiy
 </div>
 
 <div class="alert mt-3 alert-info" style="text-align:center;">
-<span><strong>Sign up for an Expression of Interest to Present via this link: (Deadline 20th January) &nbsp;&nbsp;
+<span><strong>Sign up for an Expression of Interest to Present via this link: (Deadline 30th September) &nbsp;&nbsp;
 <a class="btn btn-warning" role="button" href="https://bmva.charitysuite.com/forms/zuvleapq">Register Here to Present</a></strong></span>
 </div>
 
