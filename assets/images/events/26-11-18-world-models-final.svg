@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="440" viewBox="0 0 1080 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BMVA Symposium on World Models animated logo">
+  <title>BMVA Symposium on World Models</title>
+  <desc>A rotating latent-space globe emitting a rollout of predicted future frames over a scrolling environment grid.</desc>
+  <style>
+    @keyframes dash{to{stroke-dashoffset:-1000}}
+    @keyframes scroll-grid{from{transform:translateY(0)}to{transform:translateY(44px)}}
+    @keyframes twinkle{0%,100%{opacity:.25}50%{opacity:1}}
+    @keyframes pulse{0%,100%{opacity:.5;transform:scale(.96)}50%{opacity:1;transform:scale(1.05)}}
+    .tile{transform-box:fill-box;transform-origin:center;animation:pulse 3.6s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+  </style>
+
+  <defs>
+    <radialGradient id="gBg" cx="18%" cy="8%" r="120%">
+      <stop offset="0" stop-color="#0E1630"/><stop offset=".6" stop-color="#070A16"/>
+    </radialGradient>
+    <linearGradient id="gWorld" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34E4EA"/><stop offset=".5" stop-color="#4C7DFF"/><stop offset="1" stop-color="#9A6BFF"/>
+    </linearGradient>
+    <linearGradient id="gTitle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EAF1FF"/><stop offset="1" stop-color="#BFD4FF"/>
+    </linearGradient>
+    <linearGradient id="gFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34E4EA"/><stop offset="1" stop-color="#9A6BFF"/>
+    </linearGradient>
+    <radialGradient id="gGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4C7DFF" stop-opacity=".5"/><stop offset="1" stop-color="#4C7DFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="cGlobe"><circle cx="158" cy="205" r="95"/></clipPath>
+    <path id="orbitA" d="M 158,241 a 102,34 0 1,0 0.1,0" fill="none"/>
+    <path id="orbitB" d="M 158,307 a 34,100 0 1,0 0.1,0" fill="none"/>
+    <path id="orbitC" d="M 158,277 a 88,70 -30 1,0 0.1,0" fill="none"/>
+
+    <linearGradient id="gGridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="mGrid"><rect x="0" y="352" width="1080" height="88" fill="url(#gGridFade)"/></mask>
+
+    <!-- predicted-frame tiles: the same mini world evolving through time -->
+    <g id="frame-t">
+      <rect x="-44" y="-32" width="88" height="64" rx="10" fill="#0B1330" stroke="url(#gWorld)" stroke-width="1.6"/>
+      <path d="M-44,8 Q-5,-7 44,10" fill="none" stroke="#34E4EA" stroke-width="1.6" opacity=".85"/>
+      <path d="M-44,19 Q-3,7 44,21" fill="none" stroke="#4C7DFF" stroke-width="1.3" opacity=".5"/>
+      <circle cx="-18" cy="-5" r="4.2" fill="#FF6FB5"/>
+      <rect x="-38" y="-26" width="18" height="5" rx="2.5" fill="#9A6BFF" opacity=".8"/>
+    </g>
+    <g id="frame-t1">
+      <rect x="-44" y="-32" width="88" height="64" rx="10" fill="#0B1330" stroke="url(#gWorld)" stroke-width="1.6"/>
+      <path d="M-44,10 Q3,-9 44,6" fill="none" stroke="#34E4EA" stroke-width="1.6" opacity=".85"/>
+      <path d="M-44,20 Q5,5 44,18" fill="none" stroke="#4C7DFF" stroke-width="1.3" opacity=".5"/>
+      <circle cx="1" cy="-10" r="4.2" fill="#FF6FB5"/>
+      <rect x="-29" y="-25" width="18" height="5" rx="2.5" fill="#9A6BFF" opacity=".8"/>
+    </g>
+    <g id="frame-t2">
+      <rect x="-44" y="-32" width="88" height="64" rx="10" fill="#0B1330" stroke="url(#gWorld)" stroke-width="1.6"/>
+      <path d="M-44,13 Q12,-12 44,1" fill="none" stroke="#34E4EA" stroke-width="1.6" opacity=".85"/>
+      <path d="M-44,22 Q11,3 44,15" fill="none" stroke="#4C7DFF" stroke-width="1.3" opacity=".5"/>
+      <circle cx="22" cy="-15" r="4.2" fill="#FF6FB5"/>
+      <rect x="-18" y="-23" width="18" height="5" rx="2.5" fill="#9A6BFF" opacity=".8"/>
+    </g>
+  </defs>
+
+  <rect width="1080" height="440" fill="url(#gBg)"/>
+
+  <ellipse cx="158" cy="205" rx="210" ry="190" fill="url(#gGlow)"/>
+
+  <!-- ===== ENVIRONMENT: scrolling perspective ground grid ===== -->
+  <g mask="url(#mGrid)" opacity=".45">
+    <g stroke="#3D5DA8" stroke-width="1">
+      <line x1="-180" y1="440" x2="128" y2="330"/>
+      <line x1="40"   y1="440" x2="144" y2="330"/>
+      <line x1="260"  y1="440" x2="158" y2="330"/>
+      <line x1="480"  y1="440" x2="172" y2="330"/>
+      <line x1="720"  y1="440" x2="188" y2="330"/>
+      <line x1="1040" y1="440" x2="212" y2="330"/>
+    </g>
+    <g stroke="#34E4EA" stroke-width="1" opacity=".65" style="animation:scroll-grid 2.4s linear infinite">
+      <line x1="-200" x2="1280" y1="336" y2="336"/>
+      <line x1="-200" x2="1280" y1="350" y2="350"/>
+      <line x1="-200" x2="1280" y1="368" y2="368"/>
+      <line x1="-200" x2="1280" y1="392" y2="392"/>
+      <line x1="-200" x2="1280" y1="424" y2="424"/>
+    </g>
+  </g>
+
+  <!-- ===== THE WORLD: latent globe (tilted axis, rotating) ===== -->
+  <g>
+    <circle cx="158" cy="205" r="96" fill="#0A1330" stroke="url(#gWorld)" stroke-width="2"/>
+
+    <!-- tilted wireframe -->
+    <g transform="rotate(-16 158 205)">
+      <!-- rotation axis + poles -->
+      <line x1="158" y1="105" x2="158" y2="305" stroke="#8FD8FF" stroke-width="1" opacity=".22" stroke-dasharray="2 5"/>
+      <circle cx="158" cy="109" r="2.8" fill="#8FD8FF" opacity=".75"/>
+      <circle cx="158" cy="301" r="2.8" fill="#8FD8FF" opacity=".45"/>
+
+      <!-- latitude rings -->
+      <g fill="none" stroke="url(#gWorld)" stroke-width="1.2" opacity=".5">
+        <ellipse cx="158" cy="153" rx="80" ry="11"/>
+        <ellipse cx="158" cy="205" rx="96" ry="24"/>
+        <ellipse cx="158" cy="257" rx="80" ry="11"/>
+      </g>
+
+      <!-- meridians sweeping across = continuous rotation -->
+      <g fill="none" stroke="#8FD8FF" stroke-width="1.15">
+        <ellipse cx="158" cy="205" ry="96" rx="4">
+          <animate attributeName="rx" values="4;94;4" dur="6s" repeatCount="indefinite" begin="0s"/>
+          <animate attributeName="opacity" values=".1;.7;.1" dur="6s" repeatCount="indefinite" begin="0s"/>
+        </ellipse>
+        <ellipse cx="158" cy="205" ry="96" rx="4">
+          <animate attributeName="rx" values="4;94;4" dur="6s" repeatCount="indefinite" begin="-1.2s"/>
+          <animate attributeName="opacity" values=".1;.7;.1" dur="6s" repeatCount="indefinite" begin="-1.2s"/>
+        </ellipse>
+        <ellipse cx="158" cy="205" ry="96" rx="4">
+          <animate attributeName="rx" values="4;94;4" dur="6s" repeatCount="indefinite" begin="-2.4s"/>
+          <animate attributeName="opacity" values=".1;.7;.1" dur="6s" repeatCount="indefinite" begin="-2.4s"/>
+        </ellipse>
+        <ellipse cx="158" cy="205" ry="96" rx="4">
+          <animate attributeName="rx" values="4;94;4" dur="6s" repeatCount="indefinite" begin="-3.6s"/>
+          <animate attributeName="opacity" values=".1;.7;.1" dur="6s" repeatCount="indefinite" begin="-3.6s"/>
+        </ellipse>
+        <ellipse cx="158" cy="205" ry="96" rx="4">
+          <animate attributeName="rx" values="4;94;4" dur="6s" repeatCount="indefinite" begin="-4.8s"/>
+          <animate attributeName="opacity" values=".1;.7;.1" dur="6s" repeatCount="indefinite" begin="-4.8s"/>
+        </ellipse>
+      </g>
+
+      <!-- latent nodes on the face -->
+      <g fill="#EAF1FF">
+        <circle cx="128" cy="178" r="2.4" style="animation:twinkle 2.1s ease-in-out infinite"/>
+        <circle cx="184" cy="186" r="2.4" style="animation:twinkle 2.7s ease-in-out .3s infinite"/>
+        <circle cx="158" cy="166" r="2.4" style="animation:twinkle 2.3s ease-in-out .6s infinite"/>
+        <circle cx="120" cy="224" r="2.4" style="animation:twinkle 3.0s ease-in-out .2s infinite"/>
+        <circle cx="196" cy="230" r="2.4" style="animation:twinkle 2.5s ease-in-out .9s infinite"/>
+        <circle cx="158" cy="250" r="2.4" style="animation:twinkle 2.2s ease-in-out .5s infinite"/>
+        <circle cx="158" cy="205" r="3.2" fill="#34E4EA" style="animation:twinkle 1.8s ease-in-out infinite"/>
+      </g>
+    </g>
+
+    <!-- orbiting latent tokens, clipped to the sphere (pass behind at the rim) -->
+    <g transform="rotate(-16 158 205)" clip-path="url(#cGlobe)">
+      <circle r="4" fill="#34E4EA"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#orbitA"/></animateMotion></circle>
+      <circle r="3.4" fill="#FF6FB5"><animateMotion dur="7.5s" repeatCount="indefinite" begin="-2s"><mpath href="#orbitC"/></animateMotion></circle>
+      <circle r="3.4" fill="#9A6BFF"><animateMotion dur="5s" repeatCount="indefinite" begin="-1s"><mpath href="#orbitB"/></animateMotion></circle>
+    </g>
+  </g>
+
+  <!-- ===== WORDMARK (upper right) ===== -->
+  <g font-family="Inter,'Segoe UI',Helvetica,Arial,sans-serif">
+    <text x="324" y="116" font-size="21" letter-spacing="6" fill="#5FF0F5" font-weight="700">
+      BMVA&#8195;SYMPOSIUM&#8195;ON
+    </text>
+    <text x="322" y="188" font-size="68" font-weight="800" fill="url(#gTitle)" letter-spacing="-1.5">World Models</text>
+    <rect x="326" y="208" width="150" height="3" rx="1.5" fill="url(#gFlow)"/>
+    <text x="490" y="210" font-size="13.5" letter-spacing="1.5" fill="#9FB2D8">predicting how the world unfolds</text>
+  </g>
+
+  <!-- ===== PREDICTION ROLLOUT (lower right timeline) ===== -->
+  <g>
+    <!-- one continuous dotted rollout line linking the current world state to all future steps -->
+    <path d="M 252,255 C 300,300 320,322 360,322 L 772,322" fill="none" stroke="url(#gFlow)"
+          stroke-width="2.4" stroke-linecap="round" stroke-dasharray="4 10" style="animation:dash 1.2s linear infinite"/>
+
+    <text x="308" y="372" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#9FB2D8">t</text>
+    <g transform="translate(406,322)">
+      <use href="#frame-t" class="tile"/>
+      <text x="0" y="50" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#9FB2D8">t</text>
+    </g>
+    <g transform="translate(566,322)">
+      <use href="#frame-t1" class="tile" style="animation-delay:1.2s"/>
+      <text x="0" y="50" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#9FB2D8">t+1</text>
+    </g>
+    <g transform="translate(726,322)">
+      <use href="#frame-t2" class="tile" style="animation-delay:2.4s"/>
+      <text x="0" y="50" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#9FB2D8">t+2</text>
+    </g>
+  </g>
+
+</svg>

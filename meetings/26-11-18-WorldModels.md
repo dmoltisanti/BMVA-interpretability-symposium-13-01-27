@@ -5,8 +5,8 @@ title: "BMVA Symposium on World Models (18th November 2026) "
 index: 1
 date: 2026-11-18
 meeting-title: "BMVA Symposium on World Models"
-image: BMVAMeetingPlaceholderImg.png
-organisers: Silpa Vadakkeeveetil Sreelatha (University of Surrey)
+image: 26-11-18-world-models-final.svg
+organisers: Silpa Vadakkeeveetil Sreelatha (University of Surrey), Adarsh Kappiyath (University of Surrey), Ahmed Bourouis (University of Surrey), Frank Tsu-Fang Lu (University of Surrey), Niladri Shekhar Dutt (University College London)
 ---
 
 <div class="alert mt-3 alert-info" style="text-align:center;">
@@ -24,15 +24,31 @@ organisers: Silpa Vadakkeeveetil Sreelatha (University of Surrey)
 
 ## Invited Speakers
 
-
+* Amir Bar - Imperial College London, AMI Labs
+* Viorica Pătrăucean - Google DeepMind
+* Katja Hofmann - Microsoft Research
+* Vassia Simaiaki - Wayve
+* Niloy Mitra - University College London (UCL) and Adobe Research
+* Andrea Vedaldi - University of Oxford
+* Amir Ghalamzan - University of Sheffield
 
 
 ## Call for Presentations
 
-Coming Soon...
+World models are learned predictive models of an environment and its dynamics that can act as an internal simulator for prediction, planning, and policy learning. Progress in world modeling has come from several directions: generative and interactive video models, latent predictive architectures, 3D and 4D scene representations, model-based reinforcement learning, and model predictive control for robots and vehicles. These communities often publish in different venues, approach the problem with different assumptions, and sometimes use the same vocabulary to mean different things. This symposium aims to put these views in conversation by bringing in perspectives from both academia and industry. Our speakers span foundations of generative and predictive modelling, video and perception at scale, interactive environments and games, 3D geometry and reconstruction, and robot manipulation and autonomous driving. Alongside invited keynotes, this programme includes lightning talks and a poster session. We particularly encourage submissions from PhD students and early-career researchers.
 
-Important: This is an in-person event, with no virtual attendance option. We kindly ask all
-presenters to join us at the British Computer Society on the day.
+Topics of interest include, but are not limited to:
+* Generative and interactive world models
+* Latent predictive world models
+* Model-based reinforcement learning and planning
+* 3D and 4D scene representation, geometric grounding
+* World models for robot manipulation and control
+* World models for autonomous driving
+* World model evaluation, interpretability, and benchmarking
+* Long-horizon consistency, memory, and controllability
+* Causal world models
+
+Important: This is an in-person event, with no virtual attendance option. We kindly ask all presenters to join us at the British Computer Society on the day.
 
 **Presentations can be either published work, or ongoing research**. 
 
