@@ -11,7 +11,7 @@ organisers: Silpa Vadakkeeveetil Sreelatha (University of Surrey), Adarsh Kappiy
 
 <div class="alert mt-3 alert-info" style="text-align:center;">
 <span><strong>Please register to attend on this link: &nbsp;&nbsp;
-<a class="btn btn-warning" role="button" href="https://bmva.charitysuite.com/x7zq2zvl">Register Here to Attend</a></strong></span>
+<a class="btn btn-warning" role="button" href="https://bmva.charitysuite.com/events/x7zq2zvl">Register Here to Attend</a></strong></span>
 </div>
 
 <div class="alert mt-3 alert-info" style="text-align:center;">
