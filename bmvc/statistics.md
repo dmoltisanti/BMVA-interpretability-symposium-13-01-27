@@ -48,8 +48,8 @@ permalink: /bmvc/statistics/
 <tbody>
 
 <!-- <tr class="even">
-<td align="right">2026</td>
-<td align="left">Lancaster</td>
+<td align="right">2027</td>
+<td align="left">Bath</td>
 <td align="right">-</td>
 <td align="right">-</td>
 <td align="right">-</td>
@@ -64,6 +64,24 @@ permalink: /bmvc/statistics/
 <td align="right">-</td>
 <td align="right">-</td>
 </tr> -->
+
+<tr class="even">
+<td align="right">2026</td>
+<td align="left">Lancaster</td>
+<td align="right">1448</td>
+<td align="right">404</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">550</td>
+<td align="right">600</td>
+<td align="right">28%</td>
+<td align="right">-</td>
+</tr>
   
 <tr class="odd">
 <td align="right">2025</td>
