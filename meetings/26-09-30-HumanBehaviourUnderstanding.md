@@ -80,8 +80,6 @@ Recent progress in computer vision, multimodal AI, and large-scale learning has 
 
 **Antonius Bima Murti Wijaya** – CrowdTraj: A Benchmark for Automatic Trajectory Predictions Dataset in Crowd Scenes
 
-**Sadegh Rahmani** – From Human Perception to Human-Inspired Egocentric Action Understanding
-
 **Damith Senadeera** – From Video-Only to Audio-Visual Violence Detection using Efficient and Adaptive State-Space Models
 
 **Oliver Hixon-Fisher** – Pose Reconstruction from Sparse Input for VR Avatars
