@@ -45,6 +45,7 @@ Note that the programme is tentative and to be confirmed.
 | 15:10     |   | 16:10   |   | Invited Speaker 3                       |
 | 16:10     |   | 17:00   |   | Interactive session and closing remarks |
 
+<br>
 
 ### Talks
 
@@ -73,7 +74,9 @@ Presentations can be either published work or ongoing research. The aim is to sp
 - Robustness and scalability
 - Model intervention
 
-Presentations will take the form of one of two types: poster or talk. When applying for a presentation, you are welcome to choose any combination of the options. You can apply using the form below. If you'd like to present with a talk, please add "(talk)" at the end of the title section in the form.
+Presentations will take the form of one of two types: poster or talk. 
+You can apply using the form below: if you'd like to present with a talk, tick "Yes" under "Interested in Presenting the work?" (you're welcome to present your work with both a talk and a poster). 
+If you'd prefer to present only with a poster, tick both "Yes" and "I'd prefer a Poster".
 
 Important: This is an in-person event, with **no virtual attendance** option. We kindly ask all presenters to join us at the British Computer Society on the day.
 
