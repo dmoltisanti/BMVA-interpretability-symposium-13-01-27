@@ -24,9 +24,9 @@ organisers: Davide Moltisanti (University of Bath), Michael Wray (University of 
 
 ## Invited Speakers
 
-- [Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/) - The University of Edinburgh
-- [Elisa Ricci](https://eliricci.eu/) - University of Trento and Bruno Kessler Foundation
-- [Stephan Alaniz](https://www.eml-munich.de/people/stephan-alaniz) - Telecom Paris (Paris Polytechnic Institute)
+* [Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/), University of Edinburgh — Associate Professor in Machine Learning
+* [Elisa Ricci](https://eliricci.eu/), Trento University — Professor in Deep Visual Learning
+* [Stephan Alaniz](https://www.eml-munich.de/people/stephan-alaniz), Telecom Paris — Assistant Professor in the Multimedia group
 
 ## Programme
 
@@ -84,7 +84,7 @@ Important: This is an in-person event, with **no virtual attendance** option. We
 
 <div class="alert mt-3 alert-info" style="text-align:center;">
 <span><strong>Sign up for an Expression of Interest to Present via this link: &nbsp;&nbsp;
-<a class="btn btn-warning" role="button" href="https://bmva.charitysuite.com/forms/bolgmspa">Register Here</a></strong></span>
+<a class="btn btn-warning" role="button" href="https://bmva.charitysuite.com/forms/bolgmspa">Register Here to Present</a></strong></span>
 </div>
 
 ## Meeting Location
